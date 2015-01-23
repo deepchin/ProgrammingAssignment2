@@ -88,6 +88,18 @@ makeCacheMatrix <- function(x = matrix()) {
 ## if it already calculated , else calculate the matrix 
 ## inverse.Cache the matrix inverse and return the inverse
 
+## In order to use this method ,the
+## following syntax should be used
+## cacheSolve(<list object returned by makeCacheMatrix function>)
+## e.g  create a matrix vector using 
+##     mx <- makeCacheMatrix(input matrix)
+## then provide the list object created above i.e mx
+## to the cacheSolve method as shown below
+## the matrixinverse will be returned to a 
+## variable as shown below
+## matrixinverse <- cacheSolve(mx)
+
+
 cacheSolve <- function(lst, ...) {
         ## Return a matrix that is the inverse of 'x'
   
